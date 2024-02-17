@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Happy birthday</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+  /* Set the body and html to cover the entire viewport */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  body {
+    /* Use the image as a background */
+    background-image: url('bday.webp');
+    
+    /* Contain the image to make sure it's fully visible */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    /* Set a background color to fill any empty space */
+    background-color:#198e9d;
+  }
+
+  /* Ribbon animation */
+  .ribbon {
+    position: absolute;
+    top: -100px; /* Start from above the viewport */
+    color: #ff0000; /* Default ribbon color */
+    animation: fall linear infinite; /* Adjust animation duration as needed */
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(100vh); /* Fall all the way down to the viewport */
+      opacity: 1;
+    }
+  }
+</style>
+</head>
+<body>
+  <!-- Ribbons -->
+  <i class="fas fa-ribbon fa-3x ribbon" style="left: 10%; animation-duration: 2s;"></i>
+  <i class="fas fa-ribbon fa-2x ribbon" style="left: 30%; animation-duration: 3s; color: #00ff00;"></i>
+  <i class="fas fa-ribbon fa-4x ribbon" style="left: 50%; animation-duration: 2.5s; color: #0000ff;"></i>
+  <i class="fas fa-ribbon fa-3x ribbon" style="left: 70%; animation-duration: 3.5s; color: #ff00ff;"></i>
+</body>
+</html>
